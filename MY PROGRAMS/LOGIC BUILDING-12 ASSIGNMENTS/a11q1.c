@@ -1,0 +1,52 @@
+/*	1.Write a program which accept range from user and display all numbers in between that range.
+
+	Input:	23 35
+	Output:	23 24 25 26 27 28 29 30 31 32 33 34 35
+
+	Input:	10 18
+	Output:	10 11 12 13 14 15 16 17 18
+
+	Input:	10 10
+	Output:	10
+
+	Input:	-10 2
+	Output:	-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2
+
+	Input:	90 18
+	Output:	Invalid range	*/
+
+
+
+
+#include<stdio.h>
+
+void Display(int ino1,int ino2)
+{
+	int icnt=0;
+
+	if(ino1>ino2)
+	{
+		printf("Invalid range");
+	}
+
+	icnt=ino1;
+
+	while(icnt<=ino2)
+	{
+		printf("%d\t",icnt);
+
+		icnt++;
+	}
+}
+
+int main()
+{
+	int ivalue1=0,ivalue2=0;
+
+	printf("\nEnter the range: \n");
+	scanf("%d%d",&ivalue1,&ivalue2);
+
+	Display(ivalue1,ivalue2);	
+
+	return(0);
+}

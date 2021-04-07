@@ -1,0 +1,6 @@
+print(30+40)
+print(30-40)
+print(30*40)
+print("\nFloating point division\n",30/40)
+print("\nInteger division\n",30//40)
+print(2+2*4+4)
